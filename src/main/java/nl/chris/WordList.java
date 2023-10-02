@@ -129,12 +129,8 @@ public class WordList extends JPanel {
     public void rightWordCheck(String word, JCheckBox checkBox) {
         checkBox.addActionListener(e -> {
             if (checkBox.isSelected()) {
-                System.out.println("Right word guessed: " + word);
-                System.out.println("You get 1 point");
                 gameScore.addScorePoint();
             } else if (!checkBox.isSelected()) {
-                System.out.println("Word not guessed: " + word);
-                System.out.println("You lose 1 point");
                 gameScore.removeScorePoint();
             }
         });
