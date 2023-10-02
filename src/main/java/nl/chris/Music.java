@@ -8,7 +8,7 @@ import java.io.File;
 public class Music {
 
     // Instantiate Clip
-    private Clip clip;
+    protected Clip clip;
 
     /**
      * Play music
