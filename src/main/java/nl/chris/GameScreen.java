@@ -10,7 +10,6 @@ public class GameScreen extends JFrame {
     public GameTimer gameTimer = new GameTimer();
     public GameRound gameRound = new GameRound();
 
-
     /**
      * Constructor for GameScreen
      */
