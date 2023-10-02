@@ -14,10 +14,9 @@ public class GameScreen extends JFrame {
      * Constructor for GameScreen
      */
     public GameScreen() {
+        // Set title
         super("You have 30 seconds!");
         try {
-            // Set title
-
             // Add components
             add(wordList);
             add(gameScore);
