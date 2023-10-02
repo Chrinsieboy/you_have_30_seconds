@@ -69,7 +69,9 @@ public class GameTimer extends JPanel {
         timeLeft.setText("Time left:");
 
         // Reset timer
-        music.StopMusic();
+        if (music.clip != null) {
+            music.StopMusic();
+        }
         this.timer.restart();
         System.out.println("Reset timer manually");
     }
