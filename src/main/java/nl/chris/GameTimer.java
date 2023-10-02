@@ -8,7 +8,7 @@ public class GameTimer extends JPanel {
     private Timer timer;
 
     // Set variables
-    private String startTime = "10";
+    private String startTime = "30";
     private int timerValue = Integer.parseInt(startTime);
     private JLabel timerLabel = new JLabel(startTime, SwingConstants.RIGHT);
     private JLabel timeLeft = new JLabel("Time left:", SwingConstants.RIGHT);
@@ -55,7 +55,6 @@ public class GameTimer extends JPanel {
      */
     public void stopTimer() {
         this.timer.stop();
-        System.out.println("Stopped timer manually");
     }
 
     /**
@@ -63,7 +62,7 @@ public class GameTimer extends JPanel {
      */
     public void resetTimer() {
         // Reset all values
-        startTime = "10";
+        startTime = "30";
         timerValue = Integer.parseInt(startTime);
         timerLabel.setVisible(true);
         timeLeft.setText("Time left:");
@@ -73,6 +72,5 @@ public class GameTimer extends JPanel {
             music.StopMusic();
         }
         this.timer.restart();
-        System.out.println("Reset timer manually");
     }
 }
